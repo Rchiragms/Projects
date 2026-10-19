@@ -1,0 +1,37 @@
+{
+  "cues": {
+    "welcome": "JARVIS online. All systems ready.",
+    "enter": "Access granted. Welcome to Chirag's command centre. All systems are ready.",
+    "return": "Returning to the primary interface.",
+    "overview": "Command centre online. All portfolio modules are ready.",
+    "about": "Opening identity records.",
+    "skills": "Accessing technical capabilities.",
+    "projects": "Opening the project archive.",
+    "research": "Research interface activated.",
+    "contact": "Communication channel established.",
+    "core": "Holographic core activated.",
+    "network": "Network interface activated.",
+    "signal": "Signal visualisation activated. Displaying simulated data.",
+    "diagnostic": "Beginning interface diagnostics. Please stand by.",
+    "diagnosticComplete": "Diagnostics complete. All interface modules are responding.",
+    "battle": "Warning. Ultron detected in the simulation. Defensive protocols activated.",
+    "victory": "Ultron contained. System integrity restored.",
+    "evolution": "Evolution protocol initiated.",
+    "evolutionComplete": "Evolution complete. Advanced interface online."
+  },
+  "phrases": {
+    "Opening the programming capability database.": "skill-programming",
+    "Opening the intelligence capability database.": "skill-intelligence",
+    "Opening the engineering capability database.": "skill-engineering",
+    "Opening the interfaces capability database.": "skill-interfaces",
+    "Command interface ready. Select a module or enter a command.": "command-ready",
+    "Available terminal commands are now displayed.": "terminal-help",
+    "Portfolio interface online. Display data is simulated.": "terminal-status",
+    "Terminal history cleared.": "terminal-clear",
+    "Command not recognised. Type help for options.": "terminal-error",
+    "Opening the communication channel.": "contact-open",
+    "Opening digital twins. Connecting virtual models to real-world data, simulation, and intelligent system monitoring.": "research-digital-twins",
+    "Opening system health management. Exploring anomaly detection, predictive maintenance, and explainable condition monitoring.": "research-system-health",
+    "Opening neuroscience × ai. Investigating neuroplasticity and ways to make complex science understandable through interactive data experiences.": "research-neuroscience"
+  }
+}

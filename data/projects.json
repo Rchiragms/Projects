@@ -1,0 +1,25 @@
+/*
+  data/projects.json – simple list of project metadata used by ProjectShuttle.
+  Replace the placeholder entries with your real projects later.
+*/
+[
+  {
+    "title": "Project Alpha",
+    "description": "A machine‑learning pipeline for predictive maintenance.",
+    "link": "https://github.com/youruser/project-alpha",
+    "image": "/projects/alpha.png"
+  },
+  {
+    "title": "Project Beta",
+    "description": "Real‑time IoT dashboard built with React and Three.js.",
+    "link": "https://github.com/youruser/project-beta",
+    "image": "/projects/beta.png"
+  },
+  {
+    "title": "Project Gamma",
+    "description": "Digital twin simulation of an industrial furnace.",
+    "link": "https://github.com/youruser/project-gamma",
+    "image": "/projects/gamma.png"
+  }
+  // Add up to 8 entries following the same format.
+]

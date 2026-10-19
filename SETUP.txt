@@ -1,0 +1,49 @@
+JARVIS ORB + SHORT ANSWERS + NORTHERN MALE LIVE SPEECH
+=======================================================
+
+Inside the chirag-portfolio project, run:
+    npm install @mintplex-labs/piper-tts-web onnxruntime-web@1.18.0
+
+(Keep the existing @mlc-ai/web-llm package.)
+
+Copy these files to your matching project paths:
+    components/chat/JarvisHologram.tsx       [NEW]
+    components/chat/JarvisChat.tsx           [REPLACE]
+    components/chat/jarvis.worker.ts         [ONLY IF MISSING]
+    components/voice/JarvisVoiceDock.tsx     [REPLACE]
+    components/voice/jarvis-tts.worker.ts    [NEW]
+    components/PortfolioDashboard.tsx        [REPLACE, optional if you want the core to launch chat and react]
+    lib/ai/jarvisFacts.ts                    [REPLACE]
+    app/page.tsx                             [OPTIONAL, if you don't already mount JarvisChat]
+
+Keep the existing files as-is:
+    lib/voice/lines.json
+    public/audio/jarvis/*.wav
+    lib/audio/reactorSound.ts
+    components/3d/Experience.tsx
+    components/HeroOverlay.tsx
+
+Then:
+    npm run dev
+
+HOW IT WORKS
+- Small animated golden hologram at bottom-left: click to open chat.
+- Chat AI is free and runs on the visitor's GPU (WebGPU), when they click ACTIVATE AI.
+- Replies are shortened to one or two sentences (up to ~44 words).
+- The same Northern English Male Piper voice synthesises arbitrary replies via a browser web worker.
+- Each new conversation reply or UI event announcement begins after 1 second.
+- If someone clicks multiple UI buttons quickly, older voice announcements are cancelled.
+- The large blue neural core becomes a JARVIS activity indicator and opens chat when clicked.
+- Reactors, prerecordings, hero, terminal and dashboard styling are preserved.
+
+NOTES
+- The first general-chat AI activation downloads a large language model.
+- First dynamic TTS synthesis downloads ~63MB model and a WebAssembly runtime;
+  subsequent replies can reuse browser cache.
+- Dynamic Piper voice loading requires a supported modern browser, internet for the first download,
+  and browser storage; first spoken answer may not be immediate.
+- Some browsers/phones may not support the local AI due to missing WebGPU or memory.
+- This does not use OpenAI credits or send prompts to an AI API.
+- Microphone input may use a browser-hosted speech recognition service.
+- Check the Piper Northern English Male voice model's distribution/attribution licence before publication.
+- The interactive neural core is a UI/control/indicator. It is NOT real telemetry or a real neural computation visualiser.
